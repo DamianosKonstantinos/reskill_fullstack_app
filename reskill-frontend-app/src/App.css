@@ -1,0 +1,157 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 4vw;
+}
+
+h1{
+  font-size: 70px;
+}
+h2 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 30px;
+}
+
+
+/*CSS for the main page*/
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainPost {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 2px solid #fff;
+}
+
+.mainP-Title {
+  align-self: left;
+}
+
+.middle-photos {
+  display: flex;
+  justify-content: center;
+}
+
+.middle-photos img{
+  margin: 3vw;
+
+}
+
+
+/*CSS for the related articles part*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  width: 100%;
+  justify-items: center;
+}
+
+.gridTile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #fff;
+  text-align: center;
+}
+
+.gridTile:hover{
+  background-color: rgb(233, 228, 219);
+}
+
+
+/*CSS for different elements of the footer*/
+.footer {
+  padding: 20px; 
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  border-top: 1px solid #000;
+}
+
+/* "Grid-like" structure with left and right side of the footer */
+.left-side {
+  display: vertical;
+  align-items: center;
+}
+
+.site-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.icon{
+  width: 24px;
+  height: 24px;
+}
+
+.social-icons {
+  margin-right: 10px;
+  display: flex;
+}
+
+.right-side {
+  display: flex;
+  padding-right: 1%;
+}
+
+.column {
+  padding-left: 15%;
+}
+
+.topic {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pageb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.pageb:hover {
+  text-decoration: underline;
+}
+
+/*NavBar CSS*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  padding: 1%;
+}
+
+.nav-button {
+  background-color: #000; /* Black background color */
+  color: #fff; /* White text color */
+  border-radius: 10%;
+  display: inline-block;
+}
+
+.nav-button:hover {
+  background-color: #554f4f; /* Black background color */
+}
+
+.navp{
+  margin-inline: 10px;
+  font-weight: bold;
+}
+
+.mainSinglePost{
+  display: flex;
+  justify-content: space-between; 
+}

@@ -19,7 +19,7 @@ const SinglePost = () => {
     useEffect(() => {
     fetch('http://localhost:3000/photos')
         .then(response => response.json())
-        .then(photo => setPhoto(photo))
+        .then(photo => setPhoto(photo));
     }, []);
 
     return  (  

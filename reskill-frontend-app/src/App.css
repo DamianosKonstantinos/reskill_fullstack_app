@@ -1,6 +1,7 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
   padding: 4vw;
+  zoom: 80%;
 }
 
 h1{
@@ -72,7 +73,7 @@ h3 {
 
 /*CSS for different elements of the footer*/
 .footer {
-  padding: 20px; 
+  margin-top: 5%; 
   display: flex;
   justify-content: space-around; 
   align-items: center;

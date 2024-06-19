@@ -19,7 +19,7 @@ app.get(/\/(posts)?(home)?$/, async (req,res) => {
 
 //PHOTOS FOR THE HOMEPAGE
 app.get('/photos', async (req,res) => {
-    axios.get('https://jsonplaceholder.typicode.com/photos')
+    await axios.get('https://jsonplaceholder.typicode.com/photos')
         .then(response => {
             res.send(response.data.map(item=>item));
         }
@@ -28,7 +28,7 @@ app.get('/photos', async (req,res) => {
 
 //PHOTO FOR A SINGLE POST
 app.get('/photos/:id', async (req,res) => {
-    axios.get(`https://jsonplaceholder.typicode.com/photos/${req.params.id}`)
+    await axios.get(`https://jsonplaceholder.typicode.com/photos/${req.params.id}`)
         .then(response => {
             res.send(response.data);
         }

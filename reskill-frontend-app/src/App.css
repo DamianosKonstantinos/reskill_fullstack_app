@@ -137,14 +137,14 @@ h3 {
 }
 
 .nav-button {
-  background-color: #000; /* Black background color */
-  color: #fff; /* White text color */
+  background-color: #000; 
+  color: #fff; 
   border-radius: 10%;
   display: inline-block;
 }
 
 .nav-button:hover {
-  background-color: #554f4f; /* Black background color */
+  background-color: #554f4f; 
 }
 
 .navp{

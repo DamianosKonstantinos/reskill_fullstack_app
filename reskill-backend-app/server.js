@@ -10,11 +10,11 @@ app.use(cors(`origin: 'http://localhost:4000'`));
 //DATA FOR THE HOMEPAGE
 //REGEX TO COVER BOTH URLS WITH "/","/posts" OR "/home" BUT NOT "/posts/...."
 app.get(/\/(posts)?(home)?$/, async (req,res) => {
-        await axios.get('https://jsonplaceholder.typicode.com/posts')
-            .then(response => {
-                res.send(response.data.map(item=>item));
-            }
-        )
+    await axios.get('https://jsonplaceholder.typicode.com/posts')
+        .then(response => {
+            res.send(response.data.map(item=>item));
+        }
+    )
 });
 
 //PHOTOS FOR THE HOMEPAGE
@@ -41,7 +41,7 @@ app.get('/posts/:id', async (req,res) => {
         .then(response => {
             res.send(response.data); //DOESNT NEED MAP (ITS A SINGLE ENTRY)
         }
-        )
+    )
 });
 
 app.listen(port, () => {
